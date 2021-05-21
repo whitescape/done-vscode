@@ -1,23 +1,26 @@
-# hitman README
+# README
 
-**EXPERIMENTAL EXTENSION**
-**MACOS ONLY**
+**EXPERIMENTAL**
 
-Hitman is an extension for time tracking on Git projects.
-A part of Done! app.
-Please follow link https://done-be-stage.herokuapp.com for explanation.
+Hitman is a VSCode extension for Done! app.
+Please follow link https://done-be-stage.herokuapp.com for better explanation.
+
+## Known issues
+
+Hitman detects Git projects only.
+More to come.
+
+Not working on Windows.
 
 ## Features
 
 It's simple and silent.
-Nothing but active file path and timestamp is used.
+Nothing but path of the active file is ever used or sent.
 
 ## Requirements
 
-It will require Hitamn cli installed.
-
-Run the following command in Terminal:
-`curl https://done-be-stage.herokuapp.com/hitman.zip | jar -xv && chmod +x hitman && mv hitman /usr/local/bin && hitman`
+Extension requires `hitman` cli to be installed.
+Please follow link above for better explanation.
 
 ## Extension Settings
 

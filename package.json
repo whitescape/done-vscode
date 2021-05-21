@@ -1,12 +1,16 @@
 {
   "name": "hitman",
 	"displayName": "Hitman",
-	"description": "An extension for Done! app",
+	"description": "VSCode extension for Done! app",
 	"version": "0.0.1",
   "publisher": "whitescape-done",
 	"engines": {
 		"vscode": "^1.56.0"
 	},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whitescape/done-vscode.git"
+  },
 	"categories": [
 		"Other"
 	],
