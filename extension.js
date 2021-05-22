@@ -1,9 +1,11 @@
 const vscode = require('vscode'),
-	execFile = require('child_process').execFile
+	exec = require('child_process').exec
 
 const load = ({ nameFile, atStart }) => {
 	try {
-		execFile('/usr/local/bin/hitman', [ 'load', nameFile, atStart.toISOString() ])
+		exec(`\$HOME/.hitman.sh load ${nameFile} ${atStart.toISOString()}`, {
+			shell: '/bin/bash'
+		})
 	} catch (e) {
 		console.error(e)
 	}
