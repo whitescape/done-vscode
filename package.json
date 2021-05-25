@@ -12,9 +12,7 @@
     "url": "git+https://github.com/whitescape/done-vscode.git"
   },
   "categories": [
-    "Programming",
-    "Productivity",
-    "Tracker"
+    "Other"
   ],
   "contributes": {
     "commands": [{
