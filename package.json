@@ -1,39 +1,49 @@
 {
   "name": "hitman",
-	"displayName": "Hitman",
-	"description": "VSCode extension for Done! app",
-	"version": "0.0.1",
+  "displayName": "Hitman",
+  "description": "Coding time tracker for Done! app",
+  "version": "0.1.0",
   "publisher": "whitescape-done",
-	"engines": {
-		"vscode": "^1.56.0"
-	},
+  "engines": {
+    "vscode": "^1.56.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/whitescape/done-vscode.git"
   },
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-        "*"
-	],
-	"main": "./extension.js",
-	"scripts": {
-		"lint": "eslint .",
-		"pretest": "yarn run lint",
-		"test": "node ./test/runTest.js",
+  "categories": [
+    "Programming",
+    "Productivity",
+    "Tracker"
+  ],
+  "contributes": {
+    "commands": [{
+      "command": "hitman.auth",
+      "title": "Hitman Auth"
+    }]
+  },
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./extension.js",
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "yarn run lint",
+    "test": "node ./test/runTest.js",
     "publish": "vsce publish --no-yarn"
-	},
-	"devDependencies": {
-        "@types/vscode": "^1.56.0",
-        "@types/glob": "^7.1.3",
-        "@types/mocha": "^8.0.4",
-        "@types/node": "^12.11.7",
-        "eslint": "^7.19.0",
-        "glob": "^7.1.6",
-        "mocha": "^8.2.1",
-        "typescript": "^4.1.3",
-        "vscode-test": "^1.5.0"
-    }
-
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.0.4",
+    "@types/node": "^12.11.7",
+    "@types/vscode": "^1.56.0",
+    "eslint": "^7.19.0",
+    "glob": "^7.1.6",
+    "mocha": "^8.2.1",
+    "typescript": "^4.1.3",
+    "vscode-test": "^1.5.0"
+  },
+  "dependencies": {
+    "socket.io-client": "^4.1.2"
+  }
 }

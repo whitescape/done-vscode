@@ -1,31 +1,21 @@
 # README
 
-**EXPERIMENTAL**
-
-Hitman is a VSCode extension for Done! app.
-Please follow link https://done-be-stage.herokuapp.com for better explanation.
+**Proof of Concept**
+Hitman is a coding time tracker for Done! app.
 
 ## Known issues
-
-Hitman detects Git projects only.
-More to come.
-
-Not working on Windows.
+Hitman detects Git folders only.
 
 ## Features
-
-It's simple and silent.
-Nothing but path of the active file is ever used or sent.
+Simple and silent.
+Nothing but path of the active file is sent.
 
 ## Requirements
-
-Extension requires `hitman` cli to be installed.
-Please follow link above for better explanation.
+To see stats get Done! app TestFlight version at https://testflight.apple.com/join/7JgET9cr.
+No Android app available yet.
 
 ## Extension Settings
-
 No settings required.
 
-### 1.0.0
-
+### 0.1.0
 Initial release of the extension.
