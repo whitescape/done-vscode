@@ -12,6 +12,10 @@ const vscode = require('vscode'),
 	{ promisify } = require('util'),
 	exec = promisify(require('child_process').exec)
 
+wsc.on('disconnect', () => {
+  setTimeout(() => wsc.connect(), 1000)
+})
+
 let TOKEN = ''
 
 const auth = async context => {

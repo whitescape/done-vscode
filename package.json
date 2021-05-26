@@ -2,7 +2,7 @@
   "name": "hitman",
   "displayName": "Hitman",
   "description": "Coding time tracker for Done! app",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "whitescape-done",
   "engines": {
     "vscode": "^1.56.0"
